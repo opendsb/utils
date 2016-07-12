@@ -11,6 +11,19 @@ git clone git@github.com:opendsb/utils.git
 git clone git@github.com:opendsb/core.git
 ```
 
+You can build both projects this way:
+
+```
+for a in `echo core utils`
+do
+  echo $a
+  cd $a; mvn clean install ; cd ..
+done
+```
+
+but is more robust do this using Maven. See below:
+
+
 ### Create this pom.xml file
 
 ```

@@ -37,7 +37,7 @@ but is more robust do this using Maven. See below:
   <packaging>pom</packaging>
 
   <name>opendsb-builder</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/opendsb</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

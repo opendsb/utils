@@ -4,7 +4,7 @@
 
 	<groupId>org.opendsb</groupId>
 	<artifactId>commonUtils</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>2.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>commonUtils</name>
@@ -41,16 +41,6 @@
 					<goal>compile</goal>
 				</configuration>
 			</plugin>
-      <!-- plugin>  RETIRED
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-eclipse-plugin</artifactId>
-        <configuration>
-          <downloadSources>true</downloadSources>
-          <additionalProjectFacets>
-            <jst.web>3.1</jst.web>
-          </additionalProjectFacets>
-        </configuration>
-      </plugin  -->
 		</plugins>
 	</build>
 

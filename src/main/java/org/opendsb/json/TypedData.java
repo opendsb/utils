@@ -52,7 +52,7 @@ public class TypedData {
 				throws JsonParseException {
 
 			String className = "";
-			TypedData typedData = null;
+			TypedData typedData = new TypedData(null);
 			
 			JsonObject obj = jsonElement.getAsJsonObject();
 
@@ -79,7 +79,7 @@ public class TypedData {
 		public JsonElement serialize(TypedData data, Type arg1, JsonSerializationContext context) {
 			JsonObject jObj = new JsonObject();
 			jObj.add("data", context.serialize(data.getData()));
-			jObj.addProperty("dataType", data.getDataType().getName());
+			jObj.addProperty("dataType", data.getDataType() != null ? data.getDataType().getName() : null);
 			return jObj;
 		}
 	}
